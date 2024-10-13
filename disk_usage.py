@@ -20,6 +20,6 @@ if __name__ == "__main__":
     print(f'Minimum disk space: {min_absolute} GiB.')
     print(f'Minimum disk space: {min_percent} percent.')
     if not check_disk_usage(disk='/', min_absolute=min_absolute, min_percent=min_percent):
-        print('ERROR: Not enough disk space.')
+        print('WARNING: Not enough disk space.')
     else:
         print('Everything is ok.')
