@@ -18,4 +18,5 @@ def create_file_list(extension='.py'):
 if __name__ == '__main__':
     file_df = create_file_list()
     print(file_df['path'].to_list())
+    print(file_df['filename'].to_list())
     file_df.to_csv('file_list.csv', index=False)
