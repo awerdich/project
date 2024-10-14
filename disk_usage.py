@@ -8,7 +8,7 @@ def check_disk_usage(disk, min_absolute, min_percent):
     # Calculate the percentage of free space
     percent_free = 100*du.free / du.total
     # Calculate how many free gigabytes
-    # I am adding a new comment here.
+    # This is the version we want to keep.
     gigabytes_fee = du.free/2**30
     if percent_free < min_percent or gigabytes_fee < min_absolute:
         return False
