@@ -15,6 +15,7 @@ def main():
     memory_usage = check_memory()
     if not check_memory() > 10:
         print(f'ERROR: Memory usage: {memory_usage} MB')
+        print('Consider removing some tasks.')
     else:
         print('Memory check: OK.')
 
