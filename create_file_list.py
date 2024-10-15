@@ -20,6 +20,7 @@ def convert_df(file_list):
     return file_df
 
 if __name__ == '__main__':
-    file_df = create_file_list()
+    file_list = create_file_list()
+    file_df = convert_df(file_list)
     print(file_df['filename'].to_list())
     file_df.to_csv('file_list.csv', index=False)
