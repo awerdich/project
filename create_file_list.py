@@ -10,6 +10,10 @@ def create_file_list(extension='.py'):
     for files in the current working directory.
     """
     file_list = glob.glob(os.path.join(os.getcwd(), f'*{extension}'), recursive=False)
+    return file_list
+
+def convert_df(file_list):
+    """ Converts a file list to a DataFrame """
     file_path_list = [os.path.dirname(file) for file in file_list]
     file_name_list = [os.path.basename(file) for file in file_list]
     file_df = pd.DataFrame({'filename': file_name_list, 'path': file_path_list})
