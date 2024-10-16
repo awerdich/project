@@ -7,6 +7,7 @@ def check_memory():
     mib = 2**20
     process = psutil.Process()
     memory_info = process.memory_info()
+    # Here, we generate the output
     output = memory_info.rss/mib
     return output
 
