@@ -1,2 +1,2 @@
-### Script for processing data on O2 ###
-Here will be a detailed description about this project and the files it contains.
+### Signal processing for intensity time series  ###
+Calculate heart rates from pixel intensities using the Welch's method
